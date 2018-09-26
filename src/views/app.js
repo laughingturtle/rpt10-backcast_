@@ -4,11 +4,9 @@ var AppView = Backbone.View.extend({
 
   initialize: function() {
     this.videos = new Videos();
-    //this.videos = new Videos(window.exampleVideoData);
     this.videos.search();
     this.listenTo(this.videos, 'sync', this.selectFirst);
     this.render();
-    console.log('our youtube collection: ', this.collection);
   },
 
   selectFirst: function() {
@@ -34,6 +32,7 @@ var AppView = Backbone.View.extend({
     });
     videoList.render();
     searchVideos.render();
+    videoPlayer.render();
     return this;
   },
 

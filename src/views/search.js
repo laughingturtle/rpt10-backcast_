@@ -1,7 +1,5 @@
 var SearchView = Backbone.View.extend({
 
-  // el = '.search',
-
   events: {
     'click button': 'searchYouTube',
     'keyup input': 'pressEnter'
@@ -12,7 +10,6 @@ var SearchView = Backbone.View.extend({
     if (query) {
       this.collection.search(query);
     }
-  // this.$('input').val('');
   },
 
   pressEnter: function(e) {
