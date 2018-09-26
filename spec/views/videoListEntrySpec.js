@@ -11,6 +11,7 @@ describe('VideoListEntryView', function() {
   });
 
   it('should render a video\'s content', function() {
+    //console.log('the test expects : ', model.attributes.title);
     expect(view.el).to.match(new RegExp(model.attributes.title));
   });
 
