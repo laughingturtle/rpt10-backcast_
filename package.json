@@ -16,7 +16,7 @@
     "jquery": "^3.0.0",
     "popper.js": "^1.11.0",
     "sinon-chai": "^2.10.0",
-    "underscore": "^1.8.3"
+    "underscore": "^1.12.1"
   },
   "devDependencies": {
     "chai": "^3.5.0",
